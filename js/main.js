@@ -191,7 +191,7 @@ Form.prototype = {
     this.inputs.val('').removeClass('active');
   },
   hidePopup: function hidePopup() {
-    this.success.hide();
+    this.success.removeClass('active');
   }
 };
 $(document).ready(function () {
