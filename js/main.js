@@ -169,7 +169,6 @@ Form.prototype = {
     }
     isLoading = true
     var thas = this;
-    thas.showSuccess();
     thas.form[0][1].value = '+' + phoneData.dialCode + thas.form[0][1].value;
     var form_data = thas.form.serialize();
     for (let i = 0; i < 3; i++){
