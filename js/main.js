@@ -175,7 +175,6 @@ Form.prototype = {
       thas.form[0][i].value = ''
       thas.form[0][i].closest('.input__wrapper').classList.remove('success')
     }
-    thas.showSuccess();
     $.ajax({
       url: "/", // php file sending data
       type: "POST",
