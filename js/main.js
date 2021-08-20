@@ -179,10 +179,10 @@ Form.prototype = {
       url: "/", // php file sending data
       type: "POST",
       data: form_data,
-      success: function success(response) {
-        if (response == 200) {
+      success: function success(response, status) {
+        if (status == 200) {
           thas.showSuccess();
-        } else if (response == 400) { }
+        } else if (status == 400) { }
       }
     });
   },
